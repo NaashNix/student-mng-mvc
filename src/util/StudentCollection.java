@@ -43,4 +43,14 @@ public class StudentCollection {
         return null;
     }
 
+    public boolean isExists(String studentId){
+        for (int i = 0; i < students.length; i++) {
+            if(students[i].getStudentId().equals(studentId)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 }
